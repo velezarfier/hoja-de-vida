@@ -1,49 +1,175 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Mi página web</title>
+    <title>Mi portafolio personal</title>
     <style>
-      /* Estilos CSS */
-      body {
-        background-color: #f2f2f2;
-        font-family: Arial, sans-serif;
-      }
-      
-      h1 {
-        color: #333;
-        text-align: center;
-      }
-      
-      p {
-        color: #666;
-        font-size: 18px;
-        line-height: 1.5;
-        margin: 20px;
-      }
-      
-      .boton {
-        background-color: #4CAF50;
-        border: none;
-        color: white;
-        padding: 10px 20px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 20px;
-        cursor: pointer;
-        border-radius: 5px;
-      }
-      
-      .boton:hover {
-        background-color: #3e8e41;
-      }
-    </style>
+        /* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos del encabezado */
+header {
+  background-color: #1A2B0A;
+  color: #FFF44F;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+header img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+
+       
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  color: #FFF44F;
+  text-decoration: none;
+}
+
+/* Estilos de las secciones */
+#sobre-mi {
+    background-color: #FFF44F;
+    color:#1A2B0A ;
+  padding: 50px;
+}
+
+#habilidades {
+  padding: 50px;
+  background-color:#1A2B0A ;
+  color: #FFF44F;
+
+}
+
+#proyectos {
+  padding: 50px;
+  background-color: #FFF44F;
+  color: #1A2B0A;
+}
+
+#contacto {
+  padding: 50px;
+  background-color: #1A2B0A;
+  color: #FFF44F;
+}
+
+/* Estilos del formulario de contacto */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+}
+
+form label {
+  margin-bottom: 10px;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+}
+
+form button {
+  background-color: #FFF44F;
+  color: #1A2B0A;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #FFF44F;
+}
+      </style>
   </head>
   <body>
-    <!-- Contenido HTML -->
-    <h1>Bienvenidos a mi página web</h1>
-    <p>Esta es una página web básica creada con HTML y CSS. Aquí puedes ver cómo se pueden aplicar estilos a los elementos HTML para darles un aspecto visual atractivo.</p>
-    <a href="#" class="boton">Haz clic aquí</a>
+    <header>
+        <img src="https://www.modeloscv.org/wp-content/uploads/2022/05/Foto-CV-Hombre.jpg" alt="Logo de mi página web">
+      <h1>Juan Pablo Vélez</h1>
+      <nav>
+        <ul>
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main>
+      <section id="sobre-mi">
+        <h2>Sobre mí</h2>
+        <p>Mi nombre es Juan Pablo Vélez y nací en colombia, medellin el 16 de marzo del 2005. Actualmente, soy estudiante de la carrera de Desarrollo de Software en la Universidad ITM. Mi objetivo es especializarme como Ingeniero de Software y estoy trabajando duro para lograrlo.</p>
+        <p>Me gradué del colegio padre manyanet en el año 2021.</p>
+        <p>Soy una persona apasionada por el diseño crítico y social, y me gusta reflexionar acerca de la planificación curricular que realizan las universidades en los programas de desarrollo de software. También estoy interesado en la tecnología de inteligencia artificial y su aplicación en la creación de asistentes virtuales y personales.</p>
+      </section>
+      
+      <section id="habilidades">
+        <h2>Habilidades</h2>
+        <ul>
+          <li>Realización de procesos matemáticos</li>
+          <li>Buen uso de la lógica</li>
+          <li>Manejo del lenguaje de pseudocódigo</li>
+          <li>Desarrollo de software</li>
+          <li>Diseño de interfaces de usuario</li>
+          <li>Nivel de B2 en inglés</li>
+        </ul>
+      </section>
+      
+      <section id="proyectos">
+        <h2>Proyectos</h2>
+        <ul>
+          <li>Crear una página web</li>
+          <li>Desarrollo de una aplicación</li>
+        </ul>
+      </section>
+      
+      <section id="contacto">
+        <h2>Contacto</h2>
+        <form>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required/>
+          
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required/>
+          
+          <label for="telefono">Teléfono:</label>
+          <input type="tel" id="telefono" name="telefono" required/>
+          
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" required></textarea>
+          
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+    
+    <footer>
+      <p>Derechos reservados &copy; 2023 Juan Pablo Vélez</p>
+    </footer>
   </body>
 </html>
