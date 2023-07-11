@@ -8,22 +8,33 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 
+
+
 /* Estilos del encabezado */
-header {
-  background-color: #1A2B0A;
-  color: #FFF44F;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-}
 header img {
         width: 150px;
         height: 150px;
         border-radius: 50%;
-    }
+        display: inline-block;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+        
+
+header {
+  background-color: #A44DFF;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
 
        
 
@@ -43,34 +54,42 @@ nav li {
 }
 
 nav a {
-  color: #FFF44F;
+  color: #FFFFFF;
   text-decoration: none;
 }
 
 /* Estilos de las secciones */
 #sobre-mi {
-    background-color: #FFF44F;
-    color:#1A2B0A ;
+  background-color: #000000;
+  color: #FFFFFF;
   padding: 50px;
+  text-align: left;
+}
+
+#sobre-mi h2 {
+  text-align: center;
 }
 
 #habilidades {
   padding: 50px;
-  background-color:#1A2B0A ;
-  color: #FFF44F;
+  background-color:#FFFFFF ;
+  color: #000000;
+  text-align: center;
 
 }
 
 #proyectos {
   padding: 50px;
-  background-color: #FFF44F;
-  color: #1A2B0A;
+  background-color: #000000;
+  color: #FFFFFF;
+  text-align: center;
 }
 
 #contacto {
   padding: 50px;
-  background-color: #1A2B0A;
-  color: #FFF44F;
+  background-color: #FFFFFF;
+  color: #000000;
+  text-align: center;
 }
 
 /* Estilos del formulario de contacto */
@@ -78,6 +97,7 @@ form {
   display: flex;
   flex-direction: column;
   max-width: 500px;
+  text-align: center;
 }
 
 form label {
@@ -93,8 +113,8 @@ form textarea {
 }
 
 form button {
-  background-color: #FFF44F;
-  color: #1A2B0A;
+  background-color: #000000;
+  color: #FFFFFF;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
@@ -102,35 +122,40 @@ form button {
 }
 
 form button:hover {
-  background-color: #FFF44F;
+  background-color: #000000;
 }
-      </style>
+  </style>
   </head>
   <body>
     <header>
-        <img src="https://www.modeloscv.org/wp-content/uploads/2022/05/Foto-CV-Hombre.jpg" alt="Logo de mi página web">
-      <h1>Juan Pablo Vélez</h1>
-      <nav>
-        <ul>
-          <li><a href="#sobre-mi">Sobre mí</a></li>
-          <li><a href="#habilidades">Habilidades</a></li>
-          <li><a href="#proyectos">Proyectos</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-        </ul>
-      </nav>
+      <div style="padding-inline-start: 660px;">
+        <img src="https://www.modeloscv.org/wp-content/uploads/2022/05/Foto-CV-Hombre.jpg" alt="Descripción de la imagen">
+        <p>Juan Pablo Vélez</p>
+      </div>
     </header>
     
-    <main>
+    <div style="text-align:center;">
+      <section>
+        <h2>Navegación</h2>
+        <ul style="list-style-position:outside ; padding-left: 0;">
+          <li><a href="#sobre-mi" style="color:black;">Sobre mí</a></li>
+          <li><a href="#habilidades" style="color: black;">Habilidades</a></li>
+          <li><a href="#proyectos" style="color: black;">Proyectos</a></li>
+          <li><a href="#contacto" style="color: black;">Contacto</a></li>
+        </ul>
+      </section>
+    </div>
+
       <section id="sobre-mi">
         <h2>Sobre mí</h2>
         <p>Mi nombre es Juan Pablo Vélez y nací en colombia, medellin el 16 de marzo del 2005. Actualmente, soy estudiante de la carrera de Desarrollo de Software en la Universidad ITM. Mi objetivo es especializarme como Ingeniero de Software y estoy trabajando duro para lograrlo.</p>
         <p>Me gradué del colegio padre manyanet en el año 2021.</p>
         <p>Soy una persona apasionada por el diseño crítico y social, y me gusta reflexionar acerca de la planificación curricular que realizan las universidades en los programas de desarrollo de software. También estoy interesado en la tecnología de inteligencia artificial y su aplicación en la creación de asistentes virtuales y personales.</p>
       </section>
-      
+
       <section id="habilidades">
         <h2>Habilidades</h2>
-        <ul>
+        <ul style="list-style-position: outside; padding-right: 1000;">
           <li>Realización de procesos matemáticos</li>
           <li>Buen uso de la lógica</li>
           <li>Manejo del lenguaje de pseudocódigo</li>
@@ -140,6 +165,7 @@ form button:hover {
         </ul>
       </section>
       
+      
       <section id="proyectos">
         <h2>Proyectos</h2>
         <ul>
@@ -148,7 +174,7 @@ form button:hover {
         </ul>
       </section>
       
-      <section id="contacto">
+      <section text-align="center" id="contacto">
         <h2>Contacto</h2>
         <form>
           <label for="nombre">Nombre:</label>
@@ -166,7 +192,19 @@ form button:hover {
           <button type="submit">Enviar</button>
         </form>
       </section>
+
+
+        <section style="text-align:center;">
+        <h2>Redes sociales</h2>
+        <div class="social-media" style="display:inline-block;">
+          <a href="https://www.facebook.com/" style="color:#000000;">Facebook</a>  
+          <a href="https://twitter.com/" style="color: #000000;">Twitter</a>
+          <a href="https://www.instagram.com/" style="color: #000000;">Instagram</a>
+          <a href="https://www.linkedin.com/" style="color: #000000;">LinkedIn</a>
+        </div>
+      </section>
     </main>
+    
     
     <footer>
       <p>Derechos reservados &copy; 2023 Juan Pablo Vélez</p>
