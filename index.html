@@ -1,235 +1,370 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>CV</title>
-    <style>
-        /* Estilos generales */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
+<head>
+  <title>CV</title>
+  <style>
+    /* Estilos generales */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
 
+    /* Estilos del encabezado */
+    header img {
+      width: 10px;
+      height: 10px;
+      border-radius: 70%;
+    }
 
+    header {
+      background-color: #FFFFFF;
+      color: #000000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+    }
 
-/* Estilos del encabezado */
-header img {
-        width: 10px;
-        height: 10px;
-        border-radius: 70%;
-      }
-        
+    header h1 {
+      margin: 0;
+    }
 
-header {
-  background-color: #FFFFFF;
-  color: #000000;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  
-  
-}
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
 
+    nav li {
+      margin: 0 10px;
+    }
 
-       
+    nav a {
+      color: #F2F2F2;
+      text-decoration: none;
+    }
 
-header h1 {
-  margin: 0;
-}
+    /* Estilos de las secciones */
+    #about-me {
+      background-color: #F5F5DC;
+      color: #A63C35;
+      padding: 50px;
+      text-align: left;
+    }
 
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
+    #about-me h2 {
+      text-align: center;
+    }
 
-nav li {
-  margin: 0 10px;
-}
+    #skills {
+      padding: 50px;
+      background-color:#3F4C3A ;
+      color: #F2F3F4;
+      text-align: center;
+    }
 
-nav a {
-  color: #F2F2F2;
-  text-decoration: none;
-}
+    #projects {
+      padding: 50px;
+      background-color: #91D3F2;
+      color: #2B2B2B;
+      text-align: center;
+    }
 
-/* Estilos de las secciones */
-#about-me {
-  background-color: #F5F5DC;
-  color: #A63C35;
-  padding: 50px;
-  text-align: left;
-}
+    #Degrees{
+      padding: 50px;
+      background-color: #000000;
+      color: #FFFFFF;
+      text-align: center;
+    }
 
-#about-me h2 {
-  text-align: center;
-}
+    #contact {
+      padding: 50px;
+      background-color: #0F4C81;
+      color: #FFFFFF;
+    }
 
-#skills {
-  padding: 50px;
-  background-color:#3F4C3A ;
-  color: #F2F3F4;
-  text-align: center;
+    /* Estilos del formulario de contacto */
+    form {
+      display: flex;
+      flex-direction: column;
+      max-width: 500px;
+    }
 
-}
+    form label {
+      margin-bottom: 10px;
+    }
 
-#projects {
-  padding: 50px;
-  background-color: #91D3F2;
-  color: #2B2B2B;
-  text-align: center;
-}
+    form input,
+    form textarea {
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      border: none;
+    }
 
-#Degrees{
-  padding: 50px;
-  background-color: #000000;
-  color: #FFFFFF;
-  text-align: center;
-}
+    form button {
+      background-color: #FFFFFF;
+      color: #000000;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
 
-#contact {
-  padding: 50px;
-  background-color: #0F4C81;
-  color: #FFFFFF;
-  
-}
-
-/* Estilos del formulario de contacto */
-form {
-  display: flex;
-  flex-direction: column;
-  max-width: 500px;
-  
-}
-
-form label {
-  margin-bottom: 10px;
-}
-
-form input,
-form textarea {
-  padding: 10px;
-  margin-bottom: 20px;
-  border-radius: 5px;
-  border: none;
-}
-
-form button {
-  background-color: #FFFFFF;
-  color: #000000;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-form button:hover {
-  background-color: #FFFFFF;
-}
+    form button:hover {
+      background-color: #FFFFFF;
+    }
   </style>
-  </head>
-  <body>
-    
-    <section id="image" style="text-align: center;">
-      <div style="text-align:center;">
-        <img src="https://media.licdn.com/dms/image/D5603AQH4-7BYzZa_Yg/profile-displayphoto-shrink_400_400/0/1637674823740?e=1694649600&v=beta&t=O2AYm7j9yUAN7gshsQKCKs_e0FgIDlZTOe2px1uItM8" alt="Descripción de la imagen" style="width: 200px; border-radius: 50%;">
-        <p>Edison David Vasquez L.</p>
+</head>
+<body>
+  <section id="image" style="text-align: center;">
+    <div style="text-align:center;">
+      <img src="https://media.licdn.com/dms/image/D5603AQH4-7BYzZa_Yg/profile-displayphoto-shrink_400_400/0/1637674823740?e=1694649600&v=beta&t=O2AYm7j9yUAN7gshsQKCKs_e0FgIDlZTOe2px1uItM8" alt="Descripción de la imagen" style="width: 200px; border-radius: 50%;">
+      <p>Edison David Vasquez L.</p>
+    </div>
+  </section>
+
+  <section id="table of contest" style="margin-top: 0;">
+    <div style="text-align:center; background-color: #1C2A4D;">
+      <h2 style="color: white;">Table of Contest</h2>
+      <ul style="list-style-position:outside 2; padding-left: 0;">
+        <li><a href="#about-me" style="color:#F2F2F2;">About me </a></li>
+        <li><a href="#skills" style="color: #F2F2F2;">Skills</a></li>
+        <li><a href="#projects" style="color: #F2F2F2;">Projects</a></li>
+        <li><a href="#Degrees" style="color: #F2F2F2;">Degrees and courses</a></li>
+        <li><a href="#contact" style="color: #F2F2F2;">Contact</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="about-me" style="margin-top: -15px; background-color: #F5F5DC; color: #A63C35;">
+    <h2>About me</h2>
+    <p>As a Software Quality Engineer, I stand out for my creative ability to find innovative solutions to problems. I have experience in essential skills in the software development and quality testing industry, such as test automation, requirement analysis, and teamwork. Moreover, I am an expert in using software testing tools like Selenium and JMeter, with a particular focus on performance testing and automation of functional tests. I have demonstrated leadership skills by guiding teams towards common goals. My technical expertise includes leading agile teams and programming in Python. In summary, I am a Software Quality Engineer with creative skills, leadership abilities, and technical knowledge in highly sought-after areas of the industry..</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul style="list-style-position: inside; text-align: center; padding-left: 10px;">
+      <li>Software testing development and execution</li>
+      <li>Test automation</li>
+      <li>Software requirements and specifications analysis</li>
+      <li>Software development</li>
+      <li>Use of software testing tools, such as Selenium and JMeter</li>
+      <li>Teamwork and collaboration</li>
+      <li>Level C1 of English</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul style="list-style-position: inside; text-align: center;">
+      
+      <label for="toggle-checkbox1" class="toggle-label" onclick="toggleSection('seccion1')">GLOBANT (American client),Senior Test Automation Engineer, Level 1</label>
+      <input type="checkbox" id="toggle-checkbox1" style="display: none;">
+      <div id="seccion1" class="hidden">
+        <!-- Contenido de la sección 1 -->
+        <p>I have managed to automate web services tests with Python (pytest), Spock frame (Groovy language) and I have helped with the development of the UI and Mobile frameworks with Serenity BDD. Currently, I am the account leader of 4 people and the career leader of 3 people.I built a mobile architecture and backend with Serenity, Cucumber, and Serenity Rest, promoting best practices such as Continuous Integration, Continuous Testing, and BDD. Additionally, I trained the TAE team on the implementation of good patterns.
+        </p>
       </div>
-    </section>
-    
-    
-    <section id="table of contest" style="margin-top: 0;">
-      <div style="text-align:center; background-color: #1C2A4D;">
-        <h2 style="color: white;">Table of Contest</h2>
-        <ul style="list-style-position:outside 2; padding-left: 0;">
-          <li><a href="#about me" style="color:#F2F2F2;">About me </a></li>
-          <li><a href="#skills" style="color: #F2F2F2;">Skills</a></li>
-          <li><a href="#projetcs" style="color: #F2F2F2;">Projects</a></li>
-          <li><a href="#Degrees" style="color: #F2F2F2;">Degrees and courses</a></li>
-          <li><a href="#contact" style="color: #F2F2F2;">Contact</a></li>
+
+      <br>
+
+      <h2></h2>
+      <label for="toggle-checkbox2" class="toggle-label" onclick="toggleSection('seccion2')">GREENSILL/OMNILATAM,Senior QA Engineer</label>
+      <input type="checkbox" id="toggle-checkbox2" style="display: none;">
+      <div id="seccion2" class="hidden">
+        <!-- Contenido de la sección 2 -->
+        <p>I have led companies in their automation process, and I was responsible for the synergy of the process of testing and performance in the organizations. I designed and created the architecture for testing with Python, which gave great value in the process of automation in different environments like production and testing.</p>
+      </div>
+
+      <br>
+
+      <h2></h2>
+      <label for="toggle-checkbox3" class="toggle-label" onclick="toggleSection('seccion3')">SOFKA TECHNOLOGIES,Performance Lead</label>
+      <input type="checkbox" id="toggle-checkbox3" style="display: none;">
+      <div id="seccion3" class="hidden">
+        <!-- Contenido de la sección 3 -->
+        <p>I built and led the performance team in Medellín and Bogotá, and I trained the entire company on automation issues. I implemented a very innovative performance testing service and managed to positively impact the performance of our clients' applications with high levels of satisfaction and recommendation. As part of the marketing and advertising area, I managed to generate an impact of attracting customers and giving visibility to a service of continuous performance testing and performance culture, which was a great success challenge.
+          I created the test architectures applied to Sistecredito, SURA, Coordinadora, and internal products.</p>
+      </div>
+
+      <br>
+
+      <h2></h2>
+      <label for="toggle-checkbox4" class="toggle-label" onclick="toggleSection('seccion4')">SATRACK,Software Quality Engineer</label>
+      <input type="checkbox" id="toggle-checkbox4" style="display: none;">
+      <div id="seccion4" class="hidden">
+        <!-- Contenido de la sección 4 -->
+        <ul>
+          <li>- Led and trained the quality team in good testing practices.</li>
+          <li>- Supervised and supported the development teams.</li>
+          <li>- Performed static code analysis with SonarQube and SonarLint.</li>
+          <li>- Used incident management tools like Zendesk and Quind.</li>
+          <li>- Planned, executed strategies, and analyzed performance testing results for cloud-based projects, using Jmeter for the executions.</li>
+          <li>- Executed automation tests on the backend and frontend, utilizing technologies like Mockito, Selenium, Jbehave, SpecFlow, Serenity, SoapUi, Junit, and Nunit.</li>
+          <li>- Fostered a quality culture based on good practices such as TDD, BDD, ATDD, and CI.</li>
+          <li>- Improved company processes to deliver quality service.</li>
+           <li>- Implemented tests in hardware engineering and machine learning systems.</li>
         </ul>
       </div>
-    </section>
 
-    <section id="about-me" style="margin-top: -15px; background-color: #F5F5DC; color: #A63C35;">
-      <h2>About me</h2>
-      <p>As a Software Quality Engineer, I stand out for my creative ability to find innovative solutions to problems. I have experience in essential skills in the software development and quality testing industry, such as test automation, requirement analysis, and teamwork. Moreover, I am an expert in using software testing tools like Selenium and JMeter, with a particular focus on performance testing and automation of functional tests. I have demonstrated leadership skills by guiding teams towards common goals. My technical expertise includes leading agile teams and programming in Python. In summary, I am a Software Quality Engineer with creative skills, leadership abilities, and technical knowledge in highly sought-after areas of the industry..</p>
-    </section>
+      <br>
 
-      <section id="skills">
-        <h2>skills</h2>
-        <ul style="list-style-position: inside; text-align: center; padding-left: 10px;">
-          <li>Software testing development and execution</li>
-          <li>Test automation</li>
-          <li>Software requirements and specifications analysis</li>
-          <li>software development</li>
-          <li>Use of software testing tools, such as Selenium and JMeter</li>
-          <li>eamwork and collaboration</li>
-          <li>level C1 of English</li>
+      <h2></h2>
+      <label for="toggle-checkbox5" class="toggle-label" onclick="toggleSection('seccion5')">QVISION,Automation and performance analyst.</label>
+      <input type="checkbox" id="toggle-checkbox5" style="display: none;">
+      <div id="seccion5" class="hidden">
+        <!-- Contenido de la sección 5 -->
+        <ul>
+          <li>I implemented performance tests.</li>
+          <li>I planned, executed, and analyzed performance test results using Jmeter, Neoload, and Nmon.</li>
+          <li>I trained quality groups in automated tests using Selenium, Maven, Jbehave, Serenity, and Junit.</li>
         </ul>
-      </section>
-      
-      
-      <section id="projects">
-        <h2>Projects</h2>
-        <ul style="list-style-position: inside; text-align: center;">
-          <li>Crear una página web</li>
-          <li>Desarrollo de una aplicación</li>
+      </div>
+
+      <br>
+
+      <h2></h2>
+      <label for="toggle-checkbox6" class="toggle-label" onclick="toggleSection('seccion6')">TECH AND SOLVE,Agile Tester - Performance Analyst</label>
+      <input type="checkbox" id="toggle-checkbox6" style="display: none;">
+      <div id="seccion6" class="hidden">
+        <!-- Contenido de la sección 6 -->
+        <p>I was a member of the corporate excellence area, leading the research and inclusion of new automation tools for acceptance testing and unit testing processes. This initiative aimed to improve the level of software quality among the company's developers and testers. Additionally, I conducted automated tests, performance tests, and functional tests for the GCO company in the credit management system (SAC). Furthermore, I took the lead in constructing the continuous testing performance model.
+          Please note that the search results provided are not directly related to the previous answer, as they are related to software testing, automation testing services, and profiles of professionals with expertise in performance testing and automation.</p>
+      </div>
+
+      <br>
+
+      <h2></h2>
+      <label for="toggle-checkbox7" class="toggle-label" onclick="toggleSection('seccion7')">TATA CONSULTANCY SERVICE,Agile Tester - Performance Analyst</label>
+      <input type="checkbox" id="toggle-checkbox7" style="display: none;">
+      <div id="seccion7" class="hidden">
+        <!-- Contenido de la sección 7 -->
+        <p>I performed functional tests on the applications to improve the quality of software products as an internal tester. I worked as a functional tester, validating the business rules of a data mining system and the extraction, transformation, and loading processes of Banco de Occidente (ETL). I also implemented functional tests on client information, products, subsidiaries, and processes of 'Bancolombia' based on validations in the information HUB database for foreign subsidiaries. Over time, I became a member of the performance team, where I validated computational components and response times of transactions according to client criteria or standards as an analyst of specialized tests.
+          Please note that the search results provided are not directly related to the previous answer, as they are related to data warehousing testing, performance test execution, and software development roles.</p>
+      </div>
+    </ul>
+  </section>
+
+  <section id="Degrees" style="margin-bottom: 20px;">
+    <h2>Degrees and courses</h2>
+    <ul style="list-style-position: inside;">
+      <li>Systems Engineer (UCN)</li>
+      <li>Information Systems Technologist (ITM)</li>
+      <li>Software programming Technician (SENA)</li>
+      <li>Cyber Security (UCN)</li>
+      <li>Scrum Fundamentals Certified Credential (SMstudy)</li>
+      <li>Digital Marketing Associate (SMstudy)</li>
+      <li>Certified Marketing Strategy Associate (SMstudy)</li>
+      <li>Tester Certified (ISTQB)</li>
+    </ul>
+
+    <head>
+      <title>Mostrar/Ocultar Sección</title>
+      <style>
+        .hidden {
+          display: none;
+        }
+        .toggle-label {
+          cursor: pointer;
+        }
+        .toggle-label:hover {
+          text-decoration: underline;
+        }
+      </style>
+      <script>
+        function toggleSection(sectionId) {
+          var seccion = document.getElementById(sectionId);
+          seccion.classList.toggle("hidden");
+        }
+      </script>
+    </head>
+    <body>
+      <label for="toggle-checkbox" class="toggle-label" onclick="toggleSection('miSeccion')" style="color: blue;">Additional courses</label>
+      <input type="checkbox" id="toggle-checkbox" style="display: none;">
+      <div id="miSeccion" class="hidden">
+        <!-- Contenido de la sección -->
+        <ul>
+          <li>English Job Interview Course (platzi)</li>
+          <li>Introduction to Selenium with Python Course (platzi)</li>
+          <li>Public Speaking Course (platzi)</li>
+          <li>Artificial Intelligence Tools for Data Teams Course (platzi)</li>
+          <li>Personal Branding Free Course (platzi)</li>
+          <li>Identify and Overcome Impostor Syndrome Course (platzi)</li>
+          <li>English Audio History: Origin of the Language (platzi)</li>
+          <li>Artificial Intelligence Tools for Developers Course (platzi)</li>
+          <li>Object-Oriented Programming (OOP) Course (platzi)</li>
+          <li>Web Development Course with ChatGPT (platzi)</li>
+          <li>Introduction to the Startup World Audio Course (platzi)</li>
+          <li>Pitch Workshop for Startups (platzi)</li>
+          <li>Interactive English Audio Course: Trapped in Technology (platzi)</li>
+          <li>Advanced English for Work Course (platzi)</li>
+          <li>English Course for Developers (platzi)</li>
+          <li>English Course for Startups (platzi)</li>
+          <li>Step by Step Rest Api Testing using Python + Pytest + Allure (Udemy)</li>
+          <li>Terraform on Microsoft Azure - Terraform v12/ v13 (Udemy)</li>
+          <li>Performance Testing Using Locust (Udemy)</li>
+          <li>Cypress - modern automation Testing from Scratch + framework (Udemy)</li>
+          <li>TDD with nodeJS, tests with Jest (Udemy)</li>
+          <li>API and Database Testing with Specflow and C# (Udemy)</li>
+          <li>RPA (Robotic Process Automation) con UiPath (Udemy)</li>
+          <li>Corporate Hacking- From 0 to 100 (Udemy)</li>
+          <li>Performance Testing Using Gatling - Advanced Level (Udemy)</li>
+          <li>Performance Testing Using Gatling - Beginner Level (Udemy)</li>
+          <li>Docker from zero to expert (Udemy)</li>
+          <li>Rest API Automation using Rest Sharp and .net (Udemy)</li>
+          <li>Entity framework core 2.1 (Udemy)</li>
+          <li>Angular automation with Protractor + Typescript + Cucumber (Udemy)</li>
+          <li>Data analysis and visualization with Power BI (Udemy)</li>
+          <li>How to Use SMART Goals (Udemy)</li>
+          <li>Learning and teaching in virtual environments (Sofka University:)</li>
+          <li>Design databases in SQL (SENA)</li>
+          <li>Quality in software development (SENA)</li>
+          <li>Design of use cases (SENA)</li>
+          <li>Management of software development projects (SENA)</li>
+          <li>Database: conceptualization and Administration systems (SENA)</li>
+          <li>Basic Course digital marketing (Google IAB)</li>
+          <li>Diplomat coaching and transformation (Politécnico de suramericana)</li>
+          <li>basic Diplomat PHP and my SQL (Jaime Isaza Cdavid)</li>
         </ul>
-      </section>
+      </div>
+    </body>
+  </section>
 
-      <section id="Degrees" style="margin-bottom: 20px;">
-        <h2>Degrees and courses</h2>
-        <ul style="list-style-position: inside;">
-          <li>Systems Engineer(UCN)</li>
-          <li>Information Systems Technologist(ITM)</li>
-          <li>Software programming Technician(SENA)</li>
-          <li>Software development project management</li>
-          <li>Database: Conceptualization and Management Systems</li>
-          <li>Basic PHP and MY SQL</li>
-          <li>Quality in software development</li>
-          <li>Diseño de bases de datos en SQL</li>
-          <li>Workshop OCA Oracle (Intelligent Training)</li>
-        </ul>
-      </section>
-      
-      
-      <section id="contact" style="margin-top: -20px; text-align: left;">
-        <h2>Contact</h2>
-        <form>
-          <label for="name">name:</label>
-          <input type="text" id="name" name="name" required/>
-          
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required/>
-          
-          <label for="number">number:</label>
-          <input type="num" id="number" name="number" required/>
-          
-          <label for="massage">massage:</label>
-          <textarea id="massage" name="massage" required></textarea>
-          
-          <button type="submit">submit</button>
-        </form>
-      </section>
+  <section id="contact" style="margin-top: -20px; text-align: left;">
+    <h2>Contact</h2>
+    <form>
+      <label for="name">name:</label>
+      <input type="text" id="name" name="name" required/>
 
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required/>
 
-        <section style="text-align:center;">
-        <h2>social medias</h2>
-        <div class="social-media" style="display:inline-block;">
-          <a href="https://www.facebook.com/" style="color:#000000;">Facebook</a>  
-          <a href="https://twitter.com/" style="color: #000000;">Twitter</a>
-          <a href="https://www.instagram.com/" style="color: #000000;">Instagram</a>
-          <a href="https://www.linkedin.com/in/edison-david-vasquez-londo%C3%B1o-05084489/" style="color: #000000;">LinkedIn</a>
-        </div>
-      </section>
-    </main>
-    
-    
-    <footer>
-      <p>Derechos reservados &copy; 2023 Juan Pablo Vélez</p>
-    </footer>
-  </body>
+      <label for="number">number:</label>
+      <input type="num" id="number" name="number" required/>
+
+      <label for="massage">massage:</label>
+      <textarea id="massage" name="massage" required></textarea>
+
+      <button type="submit">submit</button>
+    </form>
+  </section>
+
+  <section style="text-align:center;">
+    <h2>social medias</h2>
+    <div class="social-media" style="display:inline-block;">
+      <a href="https://www.facebook.com/" style="color:#000000;">Facebook</a>
+      <a href="https://twitter.com/" style="color: #000000;">Twitter</a>
+      <a href="https://www.instagram.com/" style="color: #000000;">Instagram</a>
+      <a href="https://www.linkedin.com/in/edison-david-vasquez-londo%C3%B1o-05084489/" style="color: #000000;">LinkedIn</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>Derechos reservados &copy; 2023 Juan Pablo Vélez</p>
+  </footer>
+</body>
 </html>
