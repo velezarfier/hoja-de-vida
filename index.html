@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>CV</title>
   <style>
@@ -19,8 +20,8 @@
     }
 
     header {
-      background-color: #FFFFFF;
-      color: #000000;
+      background-color: #7D3C98;
+      color: #FFFFFF;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -49,8 +50,8 @@
 
     /* Estilos de las secciones */
     #about-me {
-      background-color: #F5F5DC;
-      color: #A63C35;
+      background-color: #90EE90;
+      color: #8B4513;
       padding: 50px;
       text-align: left;
     }
@@ -61,29 +62,29 @@
 
     #skills {
       padding: 50px;
-      background-color:#3F4C3A ;
-      color: #F2F3F4;
+      background-color: #8E44AD;
+      color: #FFFFFF;
       text-align: center;
     }
 
     #projects {
       padding: 50px;
-      background-color: #91D3F2;
-      color: #2B2B2B;
+      background-color: #A569BD;
+      color: #FFFFFF;
       text-align: center;
     }
 
-    #Degrees{
+    #Degrees {
       padding: 50px;
-      background-color: #000000;
+      background-color: #BB8FCE;
       color: #FFFFFF;
       text-align: center;
     }
 
     #contact {
       padding: 50px;
-      background-color: #0F4C81;
-      color: #FFFFFF;
+      background-color: #D2B4DE;
+      color: #000000;
     }
 
     /* Estilos del formulario de contacto */
@@ -119,35 +120,40 @@
     }
   </style>
 </head>
+
 <body>
-  <section id="image" style="text-align: center;">
-    <div style="text-align:center;">
+  <section id="image" style="text-align: center; margin-top: 0; background-color: #7D3C98; color: #FFFFFF;">
+    <div style="text-align:center; background-color: #5B2C6F; color: #FFFFFF">
       <img src="https://media.licdn.com/dms/image/D5603AQH4-7BYzZa_Yg/profile-displayphoto-shrink_400_400/0/1637674823740?e=1694649600&v=beta&t=O2AYm7j9yUAN7gshsQKCKs_e0FgIDlZTOe2px1uItM8" alt="Descripción de la imagen" style="width: 200px; border-radius: 50%;">
       <p>Edison David Vasquez L.</p>
-    </div>
-  </section>
-
-  <section id="table of contest" style="margin-top: 0;">
-    <div style="text-align:center; background-color: #1C2A4D;">
-      <h2 style="color: white;">Table of Contest</h2>
-      <ul style="list-style-position:outside 2; padding-left: 0;">
-        <li><a href="#about-me" style="color:#F2F2F2;">About me </a></li>
-        <li><a href="#skills" style="color: #F2F2F2;">Skills</a></li>
-        <li><a href="#projects" style="color: #F2F2F2;">Projects</a></li>
-        <li><a href="#Degrees" style="color: #F2F2F2;">Degrees and courses</a></li>
-        <li><a href="#contact" style="color: #F2F2F2;">Contact</a></li>
+      <h2 style="color: white; font-size: 24px;">Table of Contest</h2>
+      <ul style="list-style-position: outside; padding-left: 0; margin: 0;">
+        <li><a href="#about-me" style="color:#FFFFFF; font-size: 18px;">About me</a></li>
+        <li><a href="#skills" style="color: #FFFFFF; font-size: 18px;">Skills</a></li>
+        <li><a href="#projects" style="color: #FFFFFF; font-size: 18px;">Projects</a></li>
+        <li><a href="#Degrees" style="color: #FFFFFF; font-size: 18px;">Degrees and courses</a></li>
+        <li><a style="color: #FFFFFF; font-size: 18px;"></a></li>
       </ul>
     </div>
   </section>
 
-  <section id="about-me" style="margin-top: -15px; background-color: #F5F5DC; color: #A63C35;">
+
+
+
+  <section id="about-me" style="margin-top: 0; background-color: #7D3C98 ; color: #FFFFFF;">
     <h2>About me</h2>
-    <p>As a Software Quality Engineer, I stand out for my creative ability to find innovative solutions to problems. I have experience in essential skills in the software development and quality testing industry, such as test automation, requirement analysis, and teamwork. Moreover, I am an expert in using software testing tools like Selenium and JMeter, with a particular focus on performance testing and automation of functional tests. I have demonstrated leadership skills by guiding teams towards common goals. My technical expertise includes leading agile teams and programming in Python. In summary, I am a Software Quality Engineer with creative skills, leadership abilities, and technical knowledge in highly sought-after areas of the industry..</p>
+    <p>As a Software Quality Engineer, I stand out for my creative ability to find innovative solutions to problems. I
+      have experience in essential skills in the software development and quality testing industry, such as test
+      automation, requirement analysis, and teamwork. Moreover, I am an expert in using software testing tools like
+      Selenium and JMeter, with a particular focus on performance testing and automation of functional tests. I have
+      demonstrated leadership skills by guiding teams towards common goals. My technical expertise includes leading
+      agile teams and programming in Python. In summary, I am a Software Quality Engineer with creative skills,
+      leadership abilities, and technical knowledge in highly sought-after areas of the industry..</p>
   </section>
 
   <section id="skills">
     <h2>Skills</h2>
-    <ul style="list-style-position: inside; text-align: center; padding-left: 10px;">
+    <ul style="list-style-position: inside; text-align: center; padding-left: 10px;margin-top: 0;">
       <li>Software testing development and execution</li>
       <li>Test automation</li>
       <li>Software requirements and specifications analysis</li>
@@ -161,40 +167,54 @@
   <section id="projects">
     <h2>Projects</h2>
     <ul style="list-style-position: inside; text-align: center;">
-      
-      <label for="toggle-checkbox1" class="toggle-label" onclick="toggleSection('seccion1')">GLOBANT (American client),Senior Test Automation Engineer, Level 1</label>
+
+      <label for="toggle-checkbox1" class="toggle-label" onclick="toggleSection('seccion1')">GLOBANT (American
+        client),Senior Test Automation Engineer, Level 1</label>
       <input type="checkbox" id="toggle-checkbox1" style="display: none;">
       <div id="seccion1" class="hidden">
         <!-- Contenido de la sección 1 -->
-        <p>I have managed to automate web services tests with Python (pytest), Spock frame (Groovy language) and I have helped with the development of the UI and Mobile frameworks with Serenity BDD. Currently, I am the account leader of 4 people and the career leader of 3 people.I built a mobile architecture and backend with Serenity, Cucumber, and Serenity Rest, promoting best practices such as Continuous Integration, Continuous Testing, and BDD. Additionally, I trained the TAE team on the implementation of good patterns.
+        <p>I have managed to automate web services tests with Python (pytest), Spock frame (Groovy language) and I have
+          helped with the development of the UI and Mobile frameworks with Serenity BDD. Currently, I am the account
+          leader of 4 people and the career leader of 3 people.I built a mobile architecture and backend with Serenity,
+          Cucumber, and Serenity Rest, promoting best practices such as Continuous Integration, Continuous Testing, and
+          BDD. Additionally, I trained the TAE team on the implementation of good patterns.
         </p>
       </div>
 
       <br>
 
       <h2></h2>
-      <label for="toggle-checkbox2" class="toggle-label" onclick="toggleSection('seccion2')">GREENSILL/OMNILATAM,Senior QA Engineer</label>
+      <label for="toggle-checkbox2" class="toggle-label" onclick="toggleSection('seccion2')">GREENSILL/OMNILATAM,Senior
+        QA Engineer</label>
       <input type="checkbox" id="toggle-checkbox2" style="display: none;">
       <div id="seccion2" class="hidden">
         <!-- Contenido de la sección 2 -->
-        <p>I have led companies in their automation process, and I was responsible for the synergy of the process of testing and performance in the organizations. I designed and created the architecture for testing with Python, which gave great value in the process of automation in different environments like production and testing.</p>
+        <p>I have led companies in their automation process, and I was responsible for the synergy of the process of
+          testing and performance in the organizations. I designed and created the architecture for testing with Python,
+          which gave great value in the process of automation in different environments like production and testing.</p>
       </div>
 
       <br>
 
       <h2></h2>
-      <label for="toggle-checkbox3" class="toggle-label" onclick="toggleSection('seccion3')">SOFKA TECHNOLOGIES,Performance Lead</label>
+      <label for="toggle-checkbox3" class="toggle-label" onclick="toggleSection('seccion3')">SOFKA
+        TECHNOLOGIES,Performance Lead</label>
       <input type="checkbox" id="toggle-checkbox3" style="display: none;">
       <div id="seccion3" class="hidden">
         <!-- Contenido de la sección 3 -->
-        <p>I built and led the performance team in Medellín and Bogotá, and I trained the entire company on automation issues. I implemented a very innovative performance testing service and managed to positively impact the performance of our clients' applications with high levels of satisfaction and recommendation. As part of the marketing and advertising area, I managed to generate an impact of attracting customers and giving visibility to a service of continuous performance testing and performance culture, which was a great success challenge.
+        <p>I built and led the performance team in Medellín and Bogotá, and I trained the entire company on automation
+          issues. I implemented a very innovative performance testing service and managed to positively impact the
+          performance of our clients' applications with high levels of satisfaction and recommendation. As part of the
+          marketing and advertising area, I managed to generate an impact of attracting customers and giving visibility
+          to a service of continuous performance testing and performance culture, which was a great success challenge.
           I created the test architectures applied to Sistecredito, SURA, Coordinadora, and internal products.</p>
       </div>
 
       <br>
 
       <h2></h2>
-      <label for="toggle-checkbox4" class="toggle-label" onclick="toggleSection('seccion4')">SATRACK,Software Quality Engineer</label>
+      <label for="toggle-checkbox4" class="toggle-label" onclick="toggleSection('seccion4')">SATRACK,Software Quality
+        Engineer</label>
       <input type="checkbox" id="toggle-checkbox4" style="display: none;">
       <div id="seccion4" class="hidden">
         <!-- Contenido de la sección 4 -->
@@ -203,18 +223,21 @@
           <li>- Supervised and supported the development teams.</li>
           <li>- Performed static code analysis with SonarQube and SonarLint.</li>
           <li>- Used incident management tools like Zendesk and Quind.</li>
-          <li>- Planned, executed strategies, and analyzed performance testing results for cloud-based projects, using Jmeter for the executions.</li>
-          <li>- Executed automation tests on the backend and frontend, utilizing technologies like Mockito, Selenium, Jbehave, SpecFlow, Serenity, SoapUi, Junit, and Nunit.</li>
+          <li>- Planned, executed strategies, and analyzed performance testing results for cloud-based projects, using
+            Jmeter for the executions.</li>
+          <li>- Executed automation tests on the backend and frontend, utilizing technologies like Mockito, Selenium,
+            Jbehave, SpecFlow, Serenity, SoapUi, Junit, and Nunit.</li>
           <li>- Fostered a quality culture based on good practices such as TDD, BDD, ATDD, and CI.</li>
           <li>- Improved company processes to deliver quality service.</li>
-           <li>- Implemented tests in hardware engineering and machine learning systems.</li>
+          <li>- Implemented tests in hardware engineering and machine learning systems.</li>
         </ul>
       </div>
 
       <br>
 
       <h2></h2>
-      <label for="toggle-checkbox5" class="toggle-label" onclick="toggleSection('seccion5')">QVISION,Automation and performance analyst.</label>
+      <label for="toggle-checkbox5" class="toggle-label" onclick="toggleSection('seccion5')">QVISION,Automation and
+        performance analyst.</label>
       <input type="checkbox" id="toggle-checkbox5" style="display: none;">
       <div id="seccion5" class="hidden">
         <!-- Contenido de la sección 5 -->
@@ -228,23 +251,38 @@
       <br>
 
       <h2></h2>
-      <label for="toggle-checkbox6" class="toggle-label" onclick="toggleSection('seccion6')">TECH AND SOLVE,Agile Tester - Performance Analyst</label>
+      <label for="toggle-checkbox6" class="toggle-label" onclick="toggleSection('seccion6')">TECH AND SOLVE,Agile Tester
+        - Performance Analyst</label>
       <input type="checkbox" id="toggle-checkbox6" style="display: none;">
       <div id="seccion6" class="hidden">
         <!-- Contenido de la sección 6 -->
-        <p>I was a member of the corporate excellence area, leading the research and inclusion of new automation tools for acceptance testing and unit testing processes. This initiative aimed to improve the level of software quality among the company's developers and testers. Additionally, I conducted automated tests, performance tests, and functional tests for the GCO company in the credit management system (SAC). Furthermore, I took the lead in constructing the continuous testing performance model.
-          Please note that the search results provided are not directly related to the previous answer, as they are related to software testing, automation testing services, and profiles of professionals with expertise in performance testing and automation.</p>
+        <p>I was a member of the corporate excellence area, leading the research and inclusion of new automation tools
+          for acceptance testing and unit testing processes. This initiative aimed to improve the level of software
+          quality among the company's developers and testers. Additionally, I conducted automated tests, performance
+          tests, and functional tests for the GCO company in the credit management system (SAC). Furthermore, I took the
+          lead in constructing the continuous testing performance model.
+          Please note that the search results provided are not directly related to the previous answer, as they are
+          related to software testing, automation testing services, and profiles of professionals with expertise in
+          performance testing and automation.</p>
       </div>
 
       <br>
 
       <h2></h2>
-      <label for="toggle-checkbox7" class="toggle-label" onclick="toggleSection('seccion7')">TATA CONSULTANCY SERVICE,Agile Tester - Performance Analyst</label>
+      <label for="toggle-checkbox7" class="toggle-label" onclick="toggleSection('seccion7')">TATA CONSULTANCY
+        SERVICE,Agile Tester - Performance Analyst</label>
       <input type="checkbox" id="toggle-checkbox7" style="display: none;">
       <div id="seccion7" class="hidden">
         <!-- Contenido de la sección 7 -->
-        <p>I performed functional tests on the applications to improve the quality of software products as an internal tester. I worked as a functional tester, validating the business rules of a data mining system and the extraction, transformation, and loading processes of Banco de Occidente (ETL). I also implemented functional tests on client information, products, subsidiaries, and processes of 'Bancolombia' based on validations in the information HUB database for foreign subsidiaries. Over time, I became a member of the performance team, where I validated computational components and response times of transactions according to client criteria or standards as an analyst of specialized tests.
-          Please note that the search results provided are not directly related to the previous answer, as they are related to data warehousing testing, performance test execution, and software development roles.</p>
+        <p>I performed functional tests on the applications to improve the quality of software products as an internal
+          tester. I worked as a functional tester, validating the business rules of a data mining system and the
+          extraction, transformation, and loading processes of Banco de Occidente (ETL). I also implemented functional
+          tests on client information, products, subsidiaries, and processes of 'Bancolombia' based on validations in
+          the information HUB database for foreign subsidiaries. Over time, I became a member of the performance team,
+          where I validated computational components and response times of transactions according to client criteria or
+          standards as an analyst of specialized tests.
+          Please note that the search results provided are not directly related to the previous answer, as they are
+          related to data warehousing testing, performance test execution, and software development roles.</p>
       </div>
     </ul>
   </section>
@@ -268,9 +306,11 @@
         .hidden {
           display: none;
         }
+
         .toggle-label {
           cursor: pointer;
         }
+
         .toggle-label:hover {
           text-decoration: underline;
         }
@@ -282,8 +322,10 @@
         }
       </script>
     </head>
+
     <body>
-      <label for="toggle-checkbox" class="toggle-label" onclick="toggleSection('miSeccion')" style="color: blue;">Additional courses</label>
+      <label for="toggle-checkbox" class="toggle-label" onclick="toggleSection('miSeccion')"
+        style="color: blue;">Additional courses</label>
       <input type="checkbox" id="toggle-checkbox" style="display: none;">
       <div id="miSeccion" class="hidden">
         <!-- Contenido de la sección -->
@@ -334,37 +376,19 @@
     </body>
   </section>
 
-  <section id="contact" style="margin-top: -20px; text-align: left;">
-    <h2>Contact</h2>
-    <form>
-      <label for="name">name:</label>
-      <input type="text" id="name" name="name" required/>
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required/>
-
-      <label for="number">number:</label>
-      <input type="num" id="number" name="number" required/>
-
-      <label for="massage">massage:</label>
-      <textarea id="massage" name="massage" required></textarea>
-
-      <button type="submit">submit</button>
-    </form>
-  </section>
-
-  <section style="text-align:center;">
+  <section style="text-align:center; background-color: #FFFFFF; color: #000000;">
     <h2>social medias</h2>
     <div class="social-media" style="display:inline-block;">
       <a href="https://www.facebook.com/" style="color:#000000;">Facebook</a>
       <a href="https://twitter.com/" style="color: #000000;">Twitter</a>
       <a href="https://www.instagram.com/" style="color: #000000;">Instagram</a>
-      <a href="https://www.linkedin.com/in/edison-david-vasquez-londo%C3%B1o-05084489/" style="color: #000000;">LinkedIn</a>
+      <a href="https://www.linkedin.com/in/edison-david-vasquez-londo%C3%B1o-05084489/"
+        style="color: #000000;">LinkedIn</a>
     </div>
   </section>
 
-  <footer>
-    <p>Derechos reservados &copy; 2023 Juan Pablo Vélez</p>
-  </footer>
+ 
 </body>
+
 </html>
